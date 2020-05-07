@@ -1,51 +1,36 @@
 package com.arko.test;
 
-
-
-interface TouchScreenLaptop{
-	void scroll();
-	void click();
-}
-abstract class HP implements TouchScreenLaptop{
-
-	public void scroll() {
-		System.out.println("Hp implementions");
-		
+class Patient {
+	private int id;
+	private String name;
+	private String ssn;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getSsn() {
+		return ssn;
+	}
+	public void setSsn(String ssn) {
+		this.ssn = ssn;
 	}
 	
 }
-abstract class DELL implements TouchScreenLaptop{
-
-	public void scroll() {
-		System.out.println("DELL implementions");
-		
-	}
-	
-}
-class HPNotebook extends HP{
-
-	public void click() {
-		System.out.println("HP Click implemetion");
-		
-	}
-	
-}
-class DELLNotebook extends HP{
-
-	public void click() {
-		System.out.println("DELL Click implemetion");
-		
-	}
-	
-}
-public class Test {
-
+public class Test{
 	public static void main(String[] args) {
-		TouchScreenLaptop obj1 = new HPNotebook();
-		TouchScreenLaptop obj2 = new DELLNotebook();
-		obj1.click();
-		obj2.click();
+		Patient ob = new Patient();
+		ob.setId(10);
+		ob.setName("Demo");
+		ob.setSsn("456789");
+		
+		System.out.println(ob.getId()+"    "+ob.getName()+"   "+ob.getSsn());
 	}
 }
-
-
