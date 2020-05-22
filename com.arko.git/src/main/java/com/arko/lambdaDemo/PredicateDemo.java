@@ -17,14 +17,21 @@ public class PredicateDemo {
 			
 			System.out.println("Print value Even Numbers...");
 			testNumber(p2, x);
+						
+			System.out.println("Print value bigger value or  Even Numbers...");
+			testNumber(p1.or(p2), x);
 			
 			System.out.println("Print value bigger value and  Even Numbers...");
 			testNumber(p1.and(p2), x);
-			
-			System.out.println("Print value bigger value or  Even Numbers...");
-			testNumber(p1.or(p2), x);
+
+			for(int y:x) {
+				if(p1.and(p2).test(y)) {
+					System.out.println("inside "+y);					
+				}
+			}
 
 	}
+
 	static void testNumber(Predicate<Integer>p,int[] x) {
 		for(int eachval:x) {
 			if(p.test(eachval)) {

@@ -7,9 +7,11 @@ import java.util.Comparator;
 class StudentDemo{
 	int age;
 	String name;
-	StudentDemo(int age,String name){
+	String address;
+	StudentDemo(int age,String name,String address){
 		this.age = age;
 		this.name = name;
+		this.address = address;
 		
 	}
 }
@@ -40,25 +42,34 @@ public class ComparatorDemo {
 
 	public static void main(String[] args) {
 		ArrayList<StudentDemo> al = new ArrayList<StudentDemo>();
-		al.add(new StudentDemo(20, "Crko"));
-		al.add(new StudentDemo(30, "Arko"));
-		al.add(new StudentDemo(40, "Brko"));
+		al.add(new StudentDemo(20, "Crko","add1"));
+		al.add(new StudentDemo(30, "Arko","cdd2"));
+		al.add(new StudentDemo(40, "Brko","bdd3"));
 		
 		System.out.println("Before sorting");
 		for(StudentDemo s:al) {
-			System.out.println(s.age+"  "+s.name);
+			System.out.println(s.age+"  "+s.name+"  "+s.address);
 		}
 		
 		System.out.println("Age sorting");
 		Collections.sort(al,new AgeSorter());
 		for(StudentDemo s:al) {
-			System.out.println(s.age+"  "+s.name);
+			System.out.println(s.age+"  "+s.name+"  "+s.address);
 		}
 		
 		System.out.println("Name sorting");
 		Collections.sort(al,new NameSorter());
 		for(StudentDemo s:al) {
-			System.out.println(s.age+"  "+s.name);
+			System.out.println(s.age+"  "+s.name+"  "+s.address);
+		}
+		
+		System.out.println("address sorting using lambda");
+		Comparator<StudentDemo> st = (s1,s2)->{
+			return s1.address.compareTo(s2.address);
+		};
+		Collections.sort(al,st);
+		for(StudentDemo s:al) {
+			System.out.println(s.age+"  "+s.name+"  "+s.address);
 		}
 
 	}
