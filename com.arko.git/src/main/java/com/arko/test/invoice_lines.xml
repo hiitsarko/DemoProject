@@ -1,0 +1,45 @@
+<invoice_lines>
+    <invoice_line id="1221">
+		<invoice_id>111</invoice_id>
+		<items_shipped>Handbags</items_shipped>
+		<quantity>5</quantity>
+		<price>2000</price>
+		<amount>10000</amount>
+	</invoice_line>
+		<invoice_line id="1222">
+		<invoice_id>111</invoice_id>
+		<items_shipped>Wallets</items_shipped>
+		<quantity>2</quantity>
+		<price>4000</price>
+		<amount>8000</amount>
+	</invoice_line>
+		<invoice_line id="1223">
+		<invoice_id>111</invoice_id>
+		<items_shipped>Mobile Phone</items_shipped>
+		<quantity>1</quantity>
+		<price>18000</price>
+		<amount>18000</amount>
+	</invoice_line>
+		<invoice_line id="1224">
+		<invoice_id>121</invoice_id>
+		<items_shipped>Laptop</items_shipped>
+		<quantity>1</quantity>
+		<price>60000</price>
+		<amount>60000</amount>
+	</invoice_line>
+		<invoice_line id="1225">
+		<invoice_id>131</invoice_id>
+		<items_shipped>Tables</items_shipped>
+		<quantity>3</quantity>
+		<price>6500</price>
+		<amount>19500</amount>
+	</invoice_line>
+		<invoice_line id="1226">
+		<invoice_id>131</invoice_id>
+		<items_shipped>Head Phones</items_shipped>
+		<quantity>1</quantity>
+		<price>630</price>
+		<amount>630</amount>
+	</invoice_line>
+</invoice_lines>
+
