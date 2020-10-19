@@ -1,0 +1,20 @@
+<invoices>
+    <invoice id="111">
+		<date_of_invoice>09/10/2017</date_of_invoice>
+		<customer_name>Sweekrathi</customer_name>
+		<total_amount>36000</total_amount>
+		<description>Your Product will be delivered within 2 days</description>
+	</invoice>
+		<invoice id="121">
+		<date_of_invoice>10/10/2017</date_of_invoice>
+		<customer_name>Adharsh</customer_name>
+		<total_amount>60000</total_amount>
+		<description>Your Product will be delivered within 1 day</description>
+	</invoice>
+		<invoice id="131">
+		<date_of_invoice>09/10/2017</date_of_invoice>
+		<customer_name>Linda</customer_name>
+		<total_amount>20130</total_amount>
+		<description>Your Product will be delivered within 3 days</description>
+	</invoice>
+</invoices>
